@@ -21,7 +21,7 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
-var yourGrade = 8.8
+var yourGrade = 8.4
 let averageGrade: Double = (grade1 + grade2 + grade3 + yourGrade) / 4
 if yourGrade > averageGrade {
 print ("above average");
@@ -134,13 +134,20 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
+
 // your code here
+if randomNum % 2 == 0 {
+print("heads")
+} else {
+print("tails")
+}
 
 
 
 Hint: use an if/else block along with the `%` operator
 
 ***
+
 ## Question 8
 
 You are given four variables `a`, `b`, `c` and `d`. Print the value of the smallest one.
@@ -153,5 +160,8 @@ var d = 4
 
 // your code here
 
+var groupNumbers = [a, b, c, d]
 
+let daSmallest = groupNumbers.min()
+(print(daSmallest)
 ***
